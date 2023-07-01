@@ -1,0 +1,433 @@
+:root {
+  --color-gris: #535353;
+  --color-gris-2: #222222;
+  --color-gris-2-trasluz: #22222285;
+  --color-gris-claro: #9f9d9d;
+  --color-gris-oscuro: #0c0c0c;
+  --color-gris-bordes: #ccc;
+  --color-verde: #1ed55f;
+  --color-exito-fuente: #149441;
+  --color-hover-ligth: #e8e0e0;
+  --color-fuente-modo-oscuro: rgb(170, 170, 170);
+  --color-rojo: #ff0000;
+  --color-gris-claro: var(--color-gris-claro);
+  --color-azul: #04537d;
+  --color-azul-claro: #0771ab;
+  --color-azul-oscuro: #023e5a;
+  --color-rojo-errores: rgba(255, 5, 5, 0.114);
+  --color-fuente-errores-claro: rgb(181, 52, 52);
+  --color-fuente-errores-oscuro: #de9b9b;
+
+  /* Nuevos colores */
+  --color-amarillo: #ffff00;
+  --color-naranja: #ffA500;
+  --color-violeta: #8a2be2;
+  --color-rosa: #ff69b4;
+  --color-marron: #a52a2a;
+  --color-turquesa: #40e0d0;
+  --color-plata: #c0c0c0;
+  --color-dorado: #ffd700;
+  --color-rosado: #ffc0cb;
+  --color-verde-oscuro: #006400;
+  --color-celeste: #87cefa;
+  --color-morado: #800080;
+  --color-negro: #000000;
+  --color-blanco: #ffffff;
+
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+header {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid var(--color-gris-bordes);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 5px var(--color-gris-oscuro);
+  width: 100%;
+  background-color: var(--color-hover-ligth);
+}
+
+a {
+  text-decoration: none;
+
+  color: var(--color-negro); /* Utilizando el color negro definido en :root */
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-gris-oscuro); /* Agregando el borde */
+  background-color: var(--color-hover-ligth); /* Utilizando el color azul definido en :root */
+  color: var(--color-gris-oscuro); /* Utilizando el color blanco definido en :root */
+}
+
+
+header h1 {
+  margin-left: 20px;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+  height: 30px;
+  margin-right: 200px;
+}
+
+.section-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2rem;
+  list-style: none;
+}
+
+.section-cards h3 {
+  margin-bottom: 1rem;
+}
+
+.covers {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  gap: 50px;
+  list-style: none;
+}
+.linea {
+  border-bottom: 5px solid black; /* Cambiar a color negro */
+  margin: 20px 0; /* Ajusta el margen según tu diseño */
+}
+
+li {
+  width: 20%;
+  border-radius: 50px;
+  padding: 1.5rem;
+  border: 1px solid var(--color-gris-oscuro); /* Utilizando el color gris-oscuro definido en :root */
+  background-color: var(--color-hover-ligth); /* Utilizando el color gris definido en :root */
+}
+li.card:hover {
+  background-color: var(--color-hover-ligth); /* Utilizando el color hover-ligth definido en :root */
+}
+
+li img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.covers li svg {
+  position: relative;
+  top: 3%;
+  left: 65%;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+.covers li svg:hover {
+  opacity: 0.7;
+  color: var(--color-rojo); /* Utilizando el color rojo definido en :root para el hover */
+}
+
+.covers li svg.info:hover {
+  opacity: 0.7;
+  color: var(--color-azul); /* Utilizando el color azul definido en :root para el hover */
+}
+
+.covers li svg:active {
+  opacity: 1;
+}
+
+.favorito {
+  color: var(--color-rojo); /* Utilizando el color rojo definido en :root */
+
+}
+
+
+.covers svg.info {
+  position: relative;
+  left: 5%;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+.covers svg.eliminar {
+  position: relative;
+  left: 80%;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+.covers li svg.eliminar:hover {
+  color: var(--color-azul); /* Utilizando el color azul definido en :root para el hover */
+}
+
+.section-dentista-especifico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+}
+
+article {
+  border: 1px solid var(--color-gris-2);
+  border-radius: 23px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: var(--color-azul); /* Utilizando el color azul definido en :root */
+  color: white;
+}
+
+main {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-hover-ligth); /* Utilizando el color de fondo definido en :root */
+  border-top: 1px solid var(--color-modo-oscuro-gris-bordes); /* Utilizando el color gris-bordes definido en :root */
+
+  /* Estilos adicionales del footer */
+}
+
+
+/* Estilos del body */
+body {
+  background-color: var(--color-modo-oscuro-fondo); /* Utilizando el color de fondo definido en :root */
+}
+
+/* Estilos del botón */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: var(--color-gris-oscuro); /* Utilizando el color azul definido en :root */
+  color: white;
+  font-size: x-large;
+}
+
+/* Estilos de la clase .not-found */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  font-size: 300px;
+  color: var(--color-azul); /* Utilizando el color azul definido en :root */
+}
+
+label {
+  font-weight: bolder;
+  color: #000000;
+  font-size: x-large;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: x-large;
+}
+
+.contenedor-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.errores li {
+  font-size: large;
+  width: 80%;
+  border: none;
+}
+
+.errores {
+  margin-top: 10px;
+  background-color: var(--rojo-errores); /* Utilizando el color rojo-errores definido en :root */
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.errores h2 {
+  color: var(--fuente-errores-claro); /* Utilizando el color fuente-errores-claro definido en :root */
+}
+
+.errores li {
+  color: var(--fuente-errores-claro); /* Utilizando el color fuente-errores-claro definido en :root */
+}
+
+.exito {
+  font-size: x-large; /* Cambiado a un tamaño de fuente más grande */
+  color: #0af861;
+  background-color: var(--exito-fuente); /* Utilizando el color exito-fuente definido en :root */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+
+
+/* modo oscuro */
+/* Estilos base para el modo oscuro */
+
+.oscuro body {
+  background-color: var(--color-gris-oscuro);
+}
+
+.oscuro h1 {
+  color: var(--color-blanco); /* Utilizando el color fuente-modo-oscuro definido en :root */
+}
+
+.oscuro header {
+  background-color: var(--color-gris-oscuro);
+  border-bottom: 1px solid var(--color-gris-bordes);
+}
+
+.oscuro li.card {
+  background-color: var(--color-gris-oscuro); /* Utilizando el color gris-oscuro definido en :root */
+  border: 1px solid white;
+  color: white;
+}
+
+.oscuro a {
+  color: var(--color-gris-oscuro); /* Utilizando el color fuente-modo-oscuro definido en :root */
+}
+
+.oscuro nav a {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-gris-oscuro);
+  color: var(--color-gris-oscuro); /* Utilizando el color fuente-modo-oscuro definido en :root */
+}
+
+.oscuro footer {
+  background-color: var(--color-gris-2);
+  border-top: 1px solid var(--color-gris-bordes);
+}
+
+.oscuro p {
+  color: var(--color-fuente-modo-oscuro); /* Utilizando el color fuente-modo-oscuro definido en :root */
+}
+
+.oscuro button {
+  background-color: var(--color-blanco);
+  border: 1px solid white;
+  color: var(--color-gris-oscuro); /* Utilizando el color fuente-modo-oscuro definido en :root */
+}
+
+.oscuro li.card:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+.oscuro article {
+  background-color: var(--color-gris-2);
+  border: 1px solid white;
+  color: var(--color-fuente-modo-oscuro); /* Utilizando el color fuente-modo-oscuro definido en :root */
+}
+
+.oscuro label {
+  color: var(--color-blanco);
+}
+
+.oscuro h2 {
+  color: var(--color-fuente-modo-oscuro);
+}
+
+.oscuro input {
+  border: 1px solid var(--color-gris-oscuro);
+  background-color: rgb(0, 0, 0);
+  color: var(--color-blanco);
+  border: 1px solid white;
+}
+
+.oscuro .errores li {
+  border: none;
+  color: var(--color-fuente-errores-oscuro);
+}
+
+.oscuro .errores h2 {
+  color: var(--color-fuente-errores-oscuro);
+}
+
+.oscuro .exito {
+
+  color: #0af861;
+}
+
+/* Modificaciones para el modo oscuro de los elementos con clase */
+
+.oscuro .titulo {
+  color: var(--color-blanco);
+}
+
+.oscuro .covers li svg.info:hover {
+  opacity: 0.7;
+  color: var(--color-blanco);
+}
+
+.oscuro .covers li svg.eliminar:hover {
+  color: var(--color-blanco);
+}
+
+.oscuro .h1 {
+  color: var(--color-blanco);
+}
+
+.oscuro .not-found {
+  color: var(--color-blanco);
+}
+
+.oscuro form {
+  border: 1px solid var(--color-gris-oscuro);
+  background-color: var(--color-gris-oscuro);
+  color: var(--color-blanco);
+}
+.oscuro .linea {
+  border-bottom: 5px solid rgb(255, 255, 255); /* Cambiar a color negro */
+  margin: 20px 0; /* Ajusta el margen según tu diseño */
+}
