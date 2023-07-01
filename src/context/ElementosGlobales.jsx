@@ -33,7 +33,6 @@ export default function ElementosGlobalesProvider(props) {
     cambiarTema
   }
 
-
   useEffect( () => {
     getOdontologos()
   }, [])

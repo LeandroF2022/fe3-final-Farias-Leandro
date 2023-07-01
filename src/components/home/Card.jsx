@@ -8,7 +8,6 @@ export default function Card(props) {
   const navigate = useNavigate()
 
   const handleClick = () => {
-
     navigate(`/Dentis/${odontologo.id}`)
   }
 

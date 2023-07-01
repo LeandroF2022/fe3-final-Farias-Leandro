@@ -1,5 +1,6 @@
 import userImage from '../../assets/user.png'
 import { BsFillTrashFill } from 'react-icons/bs'
+
 export default function Card(props) {
   const { odontologoFavorito, eliminarOdontologoFavorito } = props
 

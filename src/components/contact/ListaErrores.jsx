@@ -3,7 +3,7 @@ export default function ListaErrores(props) {
   return (
     <div className='errores transition-element'>
       <h2 className='transition-element'>
-        Errores
+        Errores:
       </h2>
       <ol>
         {errores.map(error => (

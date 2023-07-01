@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ListaErrores from './ListaErrores';
 
+
 export default function FormularioContacto() {
   const [nombre, setNombre] = useState('');
   const [mail, setMail] = useState('');

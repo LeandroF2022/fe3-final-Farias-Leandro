@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from 'react'
 import { ElementosGlobales } from '../../context/ElementosGlobales'
 import Card from './Card'
 
+
 export default function ListadoOdontologos() {
   const { odontologos } = useContext(ElementosGlobales)
 

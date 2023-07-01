@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Card from './Card'
 
+
 export default function ListarOdontologosFavoritos() {
   const [odontologosFavoritos, setOdontologosFavoritos] = useState(
     JSON.parse(localStorage.getItem('odontologosFavoritos') || '[]')
